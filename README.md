@@ -1,6 +1,9 @@
 # CHFI
 Repositorio con recursos relacionados a los capitulos de la certificacion CHFIv10 de EC-Council
+Este trabajo se encuentra bajo una licencia [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
+
 Repository with information related to the CHFIv10 certification chapters
+This work is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
 ## Demos
 
@@ -61,3 +64,38 @@ https://cseweb.ucsd.edu/~hopper/windows/How_to_Bypass_BIOS_Passwords.htm
 
 ### File Carving
 https://cfreds-archive.nist.gov/FileCarving/index.html
+
+### Esteganografia y File Carving and Steganography
+https://cfreds.nist.gov/all/NIST/RhinoHunt
+
+## Herramientas / Tools
+
+### FTK Imager
+https://accessdata.com/product-download/ftk-imager-version-4-7-1
+
+### Autopsy
+https://www.autopsy.com/download/
+
+### zsteg
+```
+https://github.com/zed-0xff/zsteg
+Instalacion / Instalation - Linux
+gem install zsteg
+```
+
+### The Sleuth Kit
+```
+http://sleuthkit.org
+Instalacion / Instalation - Linux
+sudo apt update
+sudo apt install sleuthkit
+```
+
+### OSForensics
+https://www.osforensics.com/osforensics.html
+
+## Licencia / License
+
+[![CC-BY](https://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by.svg)](https://creativecommons.org/licenses/by/4.0/)
+
+Este trabajo se encuentra licenciado bajo / This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
