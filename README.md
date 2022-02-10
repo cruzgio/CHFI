@@ -54,6 +54,14 @@ Get-FileHash [nombre_del_archivo / file_name]
 Get-FileHash [nombre_del_archivo / file_name] -Algorith MD5
 ```
 
+### quemu-img 
+```
+qemu-img convert –f <file format> <Source_Image_filename> –O vhdx <destination_filename.vhdx>
+```
+
+### Identificacion de Imagen / Image Identification
+fdisk -l [nombre_del_archivo / file_name]
+
 ### NTFS Data Stream
 ```
 gci -recurse | % { gi $_.FullName -stream * } | where stream -ne ':$Data' - Powershell
