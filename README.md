@@ -37,6 +37,8 @@ xxd chfi-brochure.pdf | less
 xxd RFQ\ for\ Training\ Services\ for\ Cyber\ security-CND\ and\ CHFI\ FINAL.doc | less
 ```
 
+### 
+
 ### dcfldd
 ```
 dcfldd if=/dev/sdb1 of=/media/disk/test_image.dd hash=md5,sha1 hashlog=/media/disk/hashlog.txt
@@ -45,6 +47,12 @@ dcfldd if=/dev/sdb1 vf=/media/disk/test_image.dd verifylog=/media/disk/verifylog
 
 ### NTFS - Linux
 sudo parted -l
+
+### PowerShell Hash
+```
+Get-FileHash [nombre_del_archivo / file_name]
+Get-FileHash [nombre_del_archivo / file_name] -Algorith MD5
+```
 
 ### NTFS Data Stream
 ```
@@ -69,8 +77,8 @@ tasklist /v
 pslist.exe (Sysinternals)
 pslist.exe -x (Sysinternals)
 listdlls.exe (Sysinternals)
-handle.exe
-handle.exe -p [#_de_proceso / process_number]
+handle.exe (Sysinternals)
+handle.exe -p [#_de_proceso / process_number] (Sysinternals)
 netstat -o
 ipconfig /all
 wmic service list brief
