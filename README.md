@@ -46,6 +46,45 @@ dcfldd if=/dev/sdb1 vf=/media/disk/test_image.dd verifylog=/media/disk/verifylog
 ### NTFS - Linux
 sudo parted -l
 
+### NTFS Data Stream
+```
+gci -recurse | % { gi $_.FullName -stream * } | where stream -ne ':$Data' - Powershell
+```
+
+### Dispositivos USB conectados / Connected USB devices
+Get-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Enum\USB\*\*\ 
+Get-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Enum\USB\*\*\ | Select FriendlyName
+
+### Windows Forensics - Informacion Volatil / Volatile Information
+```
+date /t & time /t
+net sessions (admin)
+PsLoggedon64.exe (Sysinternals)
+logonsessions64.exe (Sysinternals + admin)
+net file (admin)
+nbtstat -c
+netstat -ano
+netstat -r
+tasklist /v
+pslist.exe (Sysinternals)
+pslist.exe -x (Sysinternals)
+listdlls.exe (Sysinternals)
+handle.exe
+handle.exe -p [#_de_proceso / process_number]
+netstat -o
+ipconfig /all
+wmic service list brief
+wmic service list brief | more
+doskey /history
+net share
+```
+
+### Windows Forensics - Revision del Sistema de Archivos / Examining File Systems
+```
+En la carpeta / Under WINDOWS\system32 
+dir /o:d
+```
+
 ## Recursos Externos / Links
 
 ### aff
@@ -93,6 +132,64 @@ sudo apt install sleuthkit
 
 ### OSForensics
 https://www.osforensics.com/osforensics.html
+
+### OSFClone
+https://www.osforensics.com/tools/create-disk-images.html
+
+### Volatility Workbench
+https://www.osforensics.com/tools/volatility-workbench.html
+
+### dban
+https://dban.org
+
+### balenaEtcher
+https://www.balena.io/etcher/
+
+### grr
+https://github.com/google/grr
+
+### Eraser
+https://eraser.heidi.ie
+
+### analyzeMFT
+https://github.com/dkovar/analyzeMFT
+
+### CrypTool 2
+https://www.cryptool.org/en/ct2/
+
+### Sysinternals
+https://docs.microsoft.com/en-us/sysinternals/downloads/
+
+### LogonSessions
+https://docs.microsoft.com/en-us/sysinternals/downloads/logonsessions
+
+### ListDLLs
+https://docs.microsoft.com/en-us/sysinternals/downloads/listdlls
+
+### Handle
+https://docs.microsoft.com/en-us/sysinternals/downloads/handle
+
+### Process Explorer
+https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer
+
+### ESE Database View
+https://www.nirsoft.net/utils/ese_database_view.html
+
+## Distribuciones Forenses / Forensic Distributions
+
+### CAINE
+https://www.caine-live.net
+
+### Tsuguri Linux
+https://tsurugi-linux.org
+
+## Documentacion / Documentation
+
+### NIST 800-88 Guidelines for Media Sanitization
+https://nvlpubs.nist.gov/nistpubs/SpecialPublications/NIST.SP.800-88r1.pdf
+
+### RFC 3227 - Guidelines for Evidence Collection and Archiving
+https://datatracker.ietf.org/doc/html/rfc3227
 
 ## Licencia / License
 
