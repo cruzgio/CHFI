@@ -62,6 +62,12 @@ qemu-img convert –f <file format> <Source_Image_filename> –O vhdx <destinati
 ### Identificacion de Imagen / Image Identification
 fdisk -l [nombre_del_archivo / file_name]
 
+### Papelera de Reciclaje / Recycle Bin
+dir /s/a <letradelaunidad / ddriveletter>:\$Recycle.Bin
+
+### DumpChk
+https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/dumpchk
+
 ### NTFS Data Stream
 ```
 gci -recurse | % { gi $_.FullName -stream * } | where stream -ne ':$Data' - Powershell
@@ -101,6 +107,23 @@ En la carpeta / Under WINDOWS\system32
 dir /o:d
 ```
 
+### Windows.edb
+\ProgramData\Microsoft\Search\Data\Applications\Windows\Windows.edb
+
+### Process-Dump
+```
+Primera ejecucion en un sistema limpio / Before first execution in a clean system
+pd -db gen
+pd -db genquick
+
+tasklist
+
+pd64.exe -system
+pd64.exe -closemon
+pd64.exe -p chrome.exe
+pd -pid 419
+```
+
 ## Recursos Externos / Links
 
 ### aff
@@ -115,6 +138,15 @@ https://freerainbowtables.com
 ### BIOS Passwords
 https://cseweb.ucsd.edu/~hopper/windows/How_to_Bypass_BIOS_Passwords.htm
 
+### Windows.edb
+https://www.thewindowsclub.com/windows-edb-file
+
+### Malware Analysis Memory Forensics with Volatility 3
+https://newtonpaul.com/malware-analysis-memory-forensics-with-volatility-3/
+
+### How to extract forensic artifacts from pagefile.sys?
+https://andreafortuna.org/2019/04/17/how-to-extract-forensic-artifacts-from-pagefile-sys/
+
 ## Imagenes para laboratorio / Images to practice
 
 ### File Carving
@@ -122,6 +154,18 @@ https://cfreds-archive.nist.gov/FileCarving/index.html
 
 ### Esteganografia y File Carving and Steganography
 https://cfreds.nist.gov/all/NIST/RhinoHunt
+
+### Windows 10 RAM 
+https://www.osforensics.com/downloads/WinDump.zip
+
+### MAC 10.9.3 RAM
+https://www.osforensics.com/downloads/MacDump.zip
+
+### Ubuntu 16.04 RAM
+https://www.osforensics.com/downloads/LinuxDump.zip
+
+### Imagenes Basicas de Memoria / Basic Memory Images
+https://cfreds.nist.gov/all/NIST/BasicMemoryImages
 
 ## Herramientas / Tools
 
@@ -167,6 +211,9 @@ https://github.com/google/grr
 ### Eraser
 https://eraser.heidi.ie
 
+### TestDisk
+https://www.cgsecurity.org/wiki/TestDisk_Download
+
 ### analyzeMFT
 https://github.com/dkovar/analyzeMFT
 
@@ -190,6 +237,27 @@ https://docs.microsoft.com/en-us/sysinternals/downloads/process-explorer
 
 ### ESE Database View
 https://www.nirsoft.net/utils/ese_database_view.html
+
+### Hirens Boot CD
+https://www.hiren.info/pages/bootcd
+
+### xmount
+https://github.com/mika/xmount
+
+### USBDeview
+https://www.nirsoft.net/utils/usb_devices_view.html
+
+### DriveLetterView
+https://www.nirsoft.net/utils/drive_letter_view.html
+
+### Process-Dump
+https://github.com/glmcdona/Process-Dump
+
+### Redline
+https://www.fireeye.com/services/freeware/redline.html
+
+### RegRipper
+https://github.com/keydet89/RegRipper3.0
 
 ## Distribuciones Forenses / Forensic Distributions
 
