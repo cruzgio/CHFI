@@ -292,6 +292,12 @@ https://www.nirsoft.net/utils/edge_cookies_view.html
 ### WinPrefetchView
 https://www.nirsoft.net/utils/win_prefetch_view.html
 
+### ShellBags Exlorer
+https://f001.backblazeb2.com/file/EricZimmermanTools/net6/ShellBagsExplorer.zip
+
+### HxD
+https://mh-nexus.de/en/hxd/
+
 ## Distribuciones Forenses / Forensic Distributions
 
 ### CAINE
