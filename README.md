@@ -315,6 +315,9 @@ https://f001.backblazeb2.com/file/EricZimmermanTools/net6/LECmd.zip
 ### JumpList Explorer
 https://f001.backblazeb2.com/file/EricZimmermanTools/net6/JumpListExplorer.zip
 
+### DFIR_scripts
+https://github.com/edchavarro/DFIR_scripts
+
 ## Distribuciones Forenses / Forensic Distributions
 
 ### CAINE
