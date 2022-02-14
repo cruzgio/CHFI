@@ -65,9 +65,6 @@ fdisk -l [nombre_del_archivo / file_name]
 ### Papelera de Reciclaje / Recycle Bin
 dir /s/a <letradelaunidad / ddriveletter>:\$Recycle.Bin
 
-### DumpChk
-https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/dumpchk
-
 ### NTFS Data Stream
 ```
 gci -recurse | % { gi $_.FullName -stream * } | where stream -ne ':$Data' - Powershell
@@ -146,6 +143,15 @@ https://newtonpaul.com/malware-analysis-memory-forensics-with-volatility-3/
 
 ### How to extract forensic artifacts from pagefile.sys?
 https://andreafortuna.org/2019/04/17/how-to-extract-forensic-artifacts-from-pagefile-sys/
+
+### How to perform a digital forensic analysis using only free tools
+https://andreafortuna.org/2021/02/13/how-to-perform-a-digital-forensic-analysis-using-only-free-tools/
+
+### DumpChk
+https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/dumpchk
+
+### Metashield CleanUp
+https://metashieldclean-up.elevenpaths.com
 
 ## Imagenes para laboratorio / Images to practice
 
@@ -258,6 +264,33 @@ https://www.fireeye.com/services/freeware/redline.html
 
 ### RegRipper
 https://github.com/keydet89/RegRipper3.0
+
+### AutoRUns
+https://docs.microsoft.com/en-us/sysinternals/downloads/autoruns
+
+### MzCacheView
+https://www.nirsoft.net/utils/mozilla_cache_viewer.html
+
+### MzCookiesView
+https://www.nirsoft.net/utils/mzcv.html
+
+### MzHistoryView
+https://www.nirsoft.net/utils/mozilla_history_view.html
+
+### ChromeCacheView
+https://www.nirsoft.net/utils/chrome_cache_view.html
+
+### ChromeCookiesView
+https://www.nirsoft.net/utils/chrome_cookies_view.html
+
+### ChromeHistoryView
+https://www.nirsoft.net/utils/chrome_history_view.html
+
+### EdgeCookiesView
+https://www.nirsoft.net/utils/edge_cookies_view.html
+
+### WinPrefetchView
+https://www.nirsoft.net/utils/win_prefetch_view.html
 
 ## Distribuciones Forenses / Forensic Distributions
 
