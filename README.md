@@ -121,6 +121,10 @@ pd64.exe -p chrome.exe
 pd -pid 419
 ```
 
+### LECmd
+LECmd.exe -d C:\Users\[nombredelusuario / username]\AppData\Roaming\Microsoft\Windows\Recent
+LECmd.exe -f C:\Users\[nombredelusuario / username]\AppData\Roaming\Microsoft\Windows\Recent\[nombredelarchivo / filename]
+
 ## Recursos Externos / Links
 
 ### aff
@@ -297,6 +301,9 @@ https://f001.backblazeb2.com/file/EricZimmermanTools/net6/ShellBagsExplorer.zip
 
 ### HxD
 https://mh-nexus.de/en/hxd/
+
+### LECmd
+https://f001.backblazeb2.com/file/EricZimmermanTools/net6/LECmd.zip
 
 ## Distribuciones Forenses / Forensic Distributions
 
