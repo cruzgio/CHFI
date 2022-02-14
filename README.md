@@ -125,6 +125,10 @@ pd -pid 419
 LECmd.exe -d C:\Users\[nombredelusuario / username]\AppData\Roaming\Microsoft\Windows\Recent
 LECmd.exe -f C:\Users\[nombredelusuario / username]\AppData\Roaming\Microsoft\Windows\Recent\[nombredelarchivo / filename]
 
+### JumpList
+cp C:\Users\[nombredelusuario / username]\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\* [carpetadetrabajo / workfolder]
+cp C:\Users\[nombredelusuario / username]\AppData\Roaming\Microsoft\Windows\Recent\CustomDestinations\* [carpetadetrabajo / workfolder]
+
 ## Recursos Externos / Links
 
 ### aff
@@ -156,6 +160,9 @@ https://docs.microsoft.com/en-us/windows-hardware/drivers/debugger/dumpchk
 
 ### Metashield CleanUp
 https://metashieldclean-up.elevenpaths.com
+
+### Eric Zimmerman's tools
+https://ericzimmerman.github.io/#!index.md
 
 ## Imagenes para laboratorio / Images to practice
 
@@ -304,6 +311,9 @@ https://mh-nexus.de/en/hxd/
 
 ### LECmd
 https://f001.backblazeb2.com/file/EricZimmermanTools/net6/LECmd.zip
+
+### JumpList Explorer
+https://f001.backblazeb2.com/file/EricZimmermanTools/net6/JumpListExplorer.zip
 
 ## Distribuciones Forenses / Forensic Distributions
 
