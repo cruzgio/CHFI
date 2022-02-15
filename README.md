@@ -129,6 +129,10 @@ LECmd.exe -f C:\Users\[nombredelusuario / username]\AppData\Roaming\Microsoft\Wi
 cp C:\Users\[nombredelusuario / username]\AppData\Roaming\Microsoft\Windows\Recent\AutomaticDestinations\* [carpetadetrabajo / workfolder]
 cp C:\Users\[nombredelusuario / username]\AppData\Roaming\Microsoft\Windows\Recent\CustomDestinations\* [carpetadetrabajo / workfolder]
 
+### wevtutil
+wevtutil el
+wevtutil gl [nombredellog / logname]
+
 ## Recursos Externos / Links
 
 ### aff
@@ -163,6 +167,9 @@ https://metashieldclean-up.elevenpaths.com
 
 ### Eric Zimmerman's tools
 https://ericzimmerman.github.io/#!index.md
+
+### Audit Logon Events
+https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-logon-events
 
 ## Imagenes para laboratorio / Images to practice
 
@@ -317,6 +324,9 @@ https://f001.backblazeb2.com/file/EricZimmermanTools/net6/JumpListExplorer.zip
 
 ### DFIR_scripts
 https://github.com/edchavarro/DFIR_scripts
+
+### kape
+https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape
 
 ## Distribuciones Forenses / Forensic Distributions
 
