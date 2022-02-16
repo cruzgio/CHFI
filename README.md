@@ -37,8 +37,6 @@ xxd chfi-brochure.pdf | less
 xxd RFQ\ for\ Training\ Services\ for\ Cyber\ security-CND\ and\ CHFI\ FINAL.doc | less
 ```
 
-### 
-
 ### dcfldd
 ```
 dcfldd if=/dev/sdb1 of=/media/disk/test_image.dd hash=md5,sha1 hashlog=/media/disk/hashlog.txt
@@ -74,7 +72,9 @@ gci -recurse | % { gi $_.FullName -stream * } | where stream -ne ':$Data' - Powe
 Get-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Enum\USB\*\*\ 
 Get-ItemProperty -Path HKLM:\SYSTEM\CurrentControlSet\Enum\USB\*\*\ | Select FriendlyName
 
-### Windows Forensics - Informacion Volatil / Volatile Information
+### Windows Forensics
+
+### Informacion Volatil / Volatile Information
 ```
 date /t & time /t
 net sessions (admin)
@@ -98,7 +98,7 @@ doskey /history
 net share
 ```
 
-### Windows Forensics - Revision del Sistema de Archivos / Examining File Systems
+### Revision del Sistema de Archivos / Examining File Systems
 ```
 En la carpeta / Under WINDOWS\system32 
 dir /o:d
@@ -132,6 +132,58 @@ cp C:\Users\[nombredelusuario / username]\AppData\Roaming\Microsoft\Windows\Rece
 ### wevtutil
 wevtutil el
 wevtutil gl [nombredellog / logname]
+
+### Linux Forensics 
+
+### Informacion Volatil / Volatile Information
+```
+hostname
+date
+cat /etc/timezone
+date +%s (epoch)
+uptime
+top
+ip a
+ifconfig [interfaz / inteface]
+netstat -a | less
+netstat -anp
+netstat -i
+netstat -r
+ip r
+lsof
+lsof -u [usuario / username]
+mount
+df
+lsmod
+modinfo [modulo del kernel / kernel module]
+id [usuario / username]
+ausearch -ui [uid] --interpret
+readelf --file-header [ruta / path]
+ps -ef
+ps -auxf
+ps -r
+ps -x
+cat /proc/partitions
+cat /proc/swaps
+dmesg
+```
+
+### Informacion del Sistema / System Information
+```
+cat /proc/cpuinfo
+cat /proc/self/mounts
+cat /proc/version
+cat /etc/passwd
+w
+last -f /var/log/wtmp
+cat /var/log/auth.log
+cat /var/log/dpkg.log
+sudo rkhunter --check --rwo
+sudo chkrootkit
+file [archivo / filename]
+strings [archivo / filename]
+strings -t d [imagen / imagefile] | grep -iE "[termino / string]"
+```
 
 ## Recursos Externos / Links
 
@@ -170,6 +222,9 @@ https://ericzimmerman.github.io/#!index.md
 
 ### Audit Logon Events
 https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/basic-audit-logon-events
+
+### How to use Netstat on Linux
+https://www.howtogeek.com/513003/how-to-use-netstat-on-linux/
 
 ## Imagenes para laboratorio / Images to practice
 
