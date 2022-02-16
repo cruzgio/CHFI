@@ -226,6 +226,12 @@ https://docs.microsoft.com/en-us/windows/security/threat-protection/auditing/bas
 ### How to use Netstat on Linux
 https://www.howtogeek.com/513003/how-to-use-netstat-on-linux/
 
+### KAPE Facilitando la tarea de recolectar evidencia
+https://blog.csiete.org/2019/02/kape-facilitando-la-tarea-de-recolectar.html
+
+### Recolección de evidencia, super timelines y Cacería de amenazas: Un aproximación a la identificación de amenazas
+https://blog.csiete.org/2020/06/recoleccion-de-evidencia-super.html
+
 ## Imagenes para laboratorio / Images to practice
 
 ### File Carving
