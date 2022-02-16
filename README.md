@@ -383,6 +383,9 @@ https://github.com/edchavarro/DFIR_scripts
 ### kape
 https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-support/kroll-artifact-parser-extractor-kape
 
+### exiftool
+https://www.exiftool.org
+
 ## Distribuciones Forenses / Forensic Distributions
 
 ### CAINE
