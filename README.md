@@ -150,7 +150,7 @@ netstat -anp
 netstat -i
 netstat -r
 ip r
-lsof
+lsof (sudo)
 lsof -u [usuario / username]
 mount
 df
@@ -258,6 +258,9 @@ https://blog.csiete.org/2020/06/recoleccion-de-evidencia-super.html
 
 ### Más secretos en la memoria del computador con AVML
 https://youtu.be/4HJ-dCDD5Bs
+
+### DFIR Training - Herramientas Forenses Gratuitas / Free Forensic Tools
+https://www.dfir.training/tools/search-results?order=alpha&dir=3&query=all&usematch=1&matchall=jr_licensetype&filter=118&jr_licensetype=free
 
 ## Imagenes para laboratorio / Images to practice
 
@@ -424,6 +427,9 @@ https://www.exiftool.org
 
 ### Volatility3
 https://github.com/volatilityfoundation/volatility3/
+
+### AVML
+https://github.com/microsoft/avml
 
 ## Distribuciones Forenses / Forensic Distributions
 
