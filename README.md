@@ -167,7 +167,6 @@ cat /proc/partitions
 cat /proc/swaps
 dmesg
 ```
-
 ### Informacion del Sistema / System Information
 ```
 cat /proc/cpuinfo
@@ -200,6 +199,14 @@ python3 vol.py -f [archivo de imagen / image file] windows.netscan
 python3 vol.py -f [archivo de imagen / image file] windows.netstat
 python3 vol.py -f [archivo de imagen / image file] windows.cmdline
 python3 vol.py -f [archivo de imagen / image file] banners.Banners
+```
+
+### MacOS Forensics
+### Informacion del Sistema / System Information
+```
+cat /System/Library/CoreServices/SystemVersion.plist
+stat -x [archivo / filename]
+tail .bash_history
 ```
 
 ## Recursos Externos / Links
