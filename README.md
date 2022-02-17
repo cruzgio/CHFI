@@ -183,6 +183,23 @@ sudo chkrootkit
 file [archivo / filename]
 strings [archivo / filename]
 strings -t d [imagen / imagefile] | grep -iE "[termino / string]"
+find / -writable -type f 2>/dev/null | grep [termino / string]
+```
+### Volatility
+```
+python3 vol.py -h
+python3 vol.py -f [archivo de imagen / image file] windows.info
+python3 vol.py -f [archivo de imagen / image file] windows.pslist
+python3 vol.py -f [archivo de imagen / image file] windows.psscan
+python3 vol.py -f [archivo de imagen / image file] windows.pstree
+python3 vol.py -f [archivo de imagen / image file] windows.malfind
+python3 vol.py -f [archivo de imagen / image file] windows.malfind.Malfind
+python3 vol.py -f [archivo de imagen / image file] windows.filescan
+python3 vol.py -f [archivo de imagen / image file] windows.registry.hivescan
+python3 vol.py -f [archivo de imagen / image file] windows.netscan
+python3 vol.py -f [archivo de imagen / image file] windows.netstat
+python3 vol.py -f [archivo de imagen / image file] windows.cmdline
+python3 vol.py -f [archivo de imagen / image file] banners.Banners
 ```
 
 ## Recursos Externos / Links
@@ -232,6 +249,9 @@ https://blog.csiete.org/2019/02/kape-facilitando-la-tarea-de-recolectar.html
 ### Recolección de evidencia, super timelines y Cacería de amenazas: Un aproximación a la identificación de amenazas
 https://blog.csiete.org/2020/06/recoleccion-de-evidencia-super.html
 
+### Más secretos en la memoria del computador con AVML
+https://youtu.be/4HJ-dCDD5Bs
+
 ## Imagenes para laboratorio / Images to practice
 
 ### File Carving
@@ -251,6 +271,9 @@ https://www.osforensics.com/downloads/LinuxDump.zip
 
 ### Imagenes Basicas de Memoria / Basic Memory Images
 https://cfreds.nist.gov/all/NIST/BasicMemoryImages
+
+### Imagenes de Memoria / Memory Samples
+https://github.com/volatilityfoundation/volatility/wiki/Memory-Samples
 
 ## Herramientas / Tools
 
@@ -391,6 +414,9 @@ https://www.kroll.com/en/services/cyber-risk/incident-response-litigation-suppor
 
 ### exiftool
 https://www.exiftool.org
+
+### Volatility3
+https://github.com/volatilityfoundation/volatility3/
 
 ## Distribuciones Forenses / Forensic Distributions
 
